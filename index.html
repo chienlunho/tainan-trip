@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f1e8">
+  <title>台南小旅行｜台南小吃</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #293b35;
+      --muted: #68766d;
+      --paper: #f6f1e8;
+      --card: #fffdf8;
+      --accent: #b45336;
+      --line: #e9dfd0;
+      --sage: #e5ece3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "DFKai-SB", "BiauKai", "標楷體", "Kaiti TC", cursive;
+      font-size: 17px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page { width: min(100% - 32px, 620px); margin: 0 auto; padding: 30px 0 42px; }
+    header {
+      padding: 30px 24px 26px;
+      border-radius: 24px;
+      background: var(--ink);
+      color: #fffaf0;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: "台南・慢慢走";
+      position: absolute;
+      right: 18px;
+      bottom: 12px;
+      color: rgba(255,250,240,.15);
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: .08em;
+    }
+    .eyebrow { margin: 0 0 7px; color: #e7bd8e; font-size: 13px; font-weight: 700; letter-spacing: .14em; }
+    h1 { margin: 0; font-size: clamp(32px, 9vw, 44px); line-height: 1.2; letter-spacing: .03em; }
+    .intro { max-width: 31em; margin: 14px 0 0; color: #e9e8dc; font-size: 16px; }
+    .note { margin: 16px 2px 24px; color: var(--muted); font-size: 14px; }
+    .day { margin-top: 26px; }
+    .day-heading { display: flex; align-items: baseline; gap: 10px; margin: 0 2px 13px; }
+    .day-heading h2 { margin: 0; font-size: 24px; letter-spacing: .04em; }
+    .day-heading span { color: var(--muted); font-size: 14px; }
+    .timeline { position: relative; display: grid; gap: 0; padding-left: 26px; }
+    .stops { display: grid; gap: 12px; }
+    .timeline::before { content: ""; position: absolute; left: 8px; top: 14px; bottom: 14px; width: 2px; background: #d9c4a7; }
+    .stop { position: relative; display: grid; grid-template-columns: 62px 1fr; gap: 14px; margin-bottom: 12px; padding: 17px 16px; border: 1px solid var(--line); border-radius: 17px; background: var(--card); box-shadow: 0 3px 12px rgba(56, 46, 31, .035); }
+    .stop::before { content: ""; position: absolute; left: -25px; top: 23px; width: 12px; height: 12px; border: 3px solid var(--paper); border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 1px #c98e6c; }
+    .travel { margin: -2px 0 10px -11px; padding: 3px 0 3px 18px; color: var(--muted); font-size: 13px; line-height: 1.5; }
+    .travel strong { color: #486154; }
+    .time-label { display: block; margin-top: 2px; color: var(--muted); font-size: 11px; font-weight: 600; }
+    .place { margin: 0; font-size: 19px; line-height: 1.4; }
+    .kind { display: inline-block; margin-left: 5px; padding: 1px 7px; border-radius: 999px; background: var(--sage); color: #486154; font-size: 12px; font-weight: 700; vertical-align: 2px; }
+    .desc { margin: 6px 0 0; color: #59675f; font-size: 15px; line-height: 1.65; }
+    footer { margin-top: 27px; padding: 17px 4px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; text-align: center; }
+    @media (max-width: 380px) {
+      .page { width: min(100% - 24px, 620px); padding-top: 18px; }
+      header { padding: 25px 19px 23px; border-radius: 20px; }
+      .stop { grid-template-columns: 55px 1fr; gap: 10px; padding: 15px 12px; }
+      .timeline { padding-left: 23px; }
+      .stop::before { left: -22px; }
+      .place { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <p class="eyebrow">吃吃逛逛・台南小吃</p>
+      <h1>台南小旅行</h1>
+      <p class="intro">從一口小吃開始，跟朋友邊吃邊逛，慢慢收集府城的好味道。</p>
+
+</header>
+
+    <p class="note">店名與行程時間為示意；交通時間為一般日機車／自駕參考估算，不含停車與等候時間。</p>
+
+    <section class="day" aria-labelledby="day-one">
+      <div class="day-heading"><h2 id="day-one">第一天</h2><span>台南小吃・老城散步</span></div>
+      <div class="timeline">
+        <article class="stop">
+          <div class="time">10:30<span class="time-label">抵達</span></div>
+          <div><h3 class="place">霞姐碗粿 <span class="kind">早午餐</span></h3><p class="desc">先用一碗在地小吃開場，吃飽再慢慢走進老城區。</p></div>
+        </article>
+        <div class="travel"><strong>前往交通</strong>｜前一站示意店家地址未定，時間待確認</div>
+        <article class="stop">
+          <div class="time">12:00<span class="time-label">抵達</span></div>
+          <div><h3 class="place">赤崁樓 <span class="kind">古蹟</span></h3><p class="desc">逛逛台南代表性的歷史建築，看看紅磚與庭園風景。</p></div>
+        </article>
+        <div class="travel"><strong>前往交通</strong>｜赤崁樓至阿樂茶屋：示意店名地址未定，待確認</div>
+        <article class="stop">
+          <div class="time">14:30<span class="time-label">抵達</span></div>
+          <div><h3 class="place">阿樂茶屋 <span class="kind">下午茶</span></h3><p class="desc">找間老屋咖啡店歇歇腳，補充體力也享受巷弄氣氛。</p></div>
+        </article>
+        <div class="travel"><strong>前往交通</strong>｜阿樂茶屋至花園夜市：待確認（示意店名）</div>
+        <article class="stop">
+          <div class="time">18:00<span class="time-label">抵達</span></div>
+          <div><h3 class="place">花園夜市 <span class="kind">晚餐</span></h3><p class="desc">和朋友分著吃幾樣小吃，逛逛攤位，為第一天收尾。</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="day" aria-labelledby="day-two">
+      <div class="day-heading"><h2 id="day-two">第二天</h2><span>巷弄巡禮・海風吹風</span></div>
+      <div class="timeline">
+        <article class="stop">
+          <div class="time">09:00<span class="time-label">抵達</span></div>
+          <div><h3 class="place">小米早餐 <span class="kind">早餐</span></h3><p class="desc">睡飽後來份簡單早餐，輕鬆開始第二天的行程。</p></div>
+        </article>
+        <div class="travel"><strong>前往交通</strong>｜前一站示意店家地址未定，時間待確認</div>
+        <article class="stop">
+          <div class="time">10:30<span class="time-label">抵達</span></div>
+          <div><h3 class="place">神農街 <span class="kind">散步</span></h3><p class="desc">沿著老街看看特色店家與街屋，遇到喜歡的角落就拍張照。</p></div>
+        </article>
+        <div class="travel"><strong>前往交通</strong>｜神農街至安平樹屋：機車／自駕約 15–20 分鐘（一般日參考）</div>
+        <article class="stop">
+          <div class="time">13:00<span class="time-label">抵達</span></div>
+          <div><h3 class="place">安平樹屋 <span class="kind">景點</span></h3><p class="desc">看看榕樹與老倉庫交織的景象，感受安平獨有的歷史氣息。</p></div>
+        </article>
+        <div class="travel"><strong>前往交通</strong>｜安平樹屋至漁光島：機車／自駕約 5–10 分鐘（一般日參考）</div>
+        <article class="stop">
+          <div class="time">15:30<span class="time-label">抵達</span></div>
+          <div><h3 class="place">漁光島海邊 <span class="kind">散步</span></h3><p class="desc">到海邊吹吹風、放慢腳步，帶著輕鬆心情結束小旅行。</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="day" aria-labelledby="before-you-go">
+      <div class="day-heading"><h2 id="before-you-go">行前提醒</h2></div>
+      <div class="stops">
+        <article class="stop"><div class="time">天氣</div><div><p class="desc">示意：出發前查看台南天氣，晴天記得做好防曬。</p></div></article>
+        <article class="stop"><div class="time">攜帶</div><div><p class="desc">示意：帶水、雨傘、防曬用品與行動電源。</p></div></article>
+        <article class="stop"><div class="time">集合</div><div><p class="desc">示意：第一天上午 10:00 在台南車站前集合。</p></div></article>
+      </div>
+    </section>
+    <footer>府城兩日小旅行・行程時間可依實際交通與店家營業狀況調整</footer>
+  </main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
