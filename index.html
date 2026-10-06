@@ -65,6 +65,7 @@
     .kind { display: inline-block; margin-left: 5px; padding: 1px 7px; border-radius: 999px; background: var(--sage); color: #486154; font-size: 12px; font-weight: 700; vertical-align: 2px; }
     .desc { margin: 6px 0 0; color: #59675f; font-size: 15px; line-height: 1.65; }
     footer { margin-top: 27px; padding: 17px 4px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; text-align: center; }
+    .site-qr { display: block; width: min(100%, 240px); height: auto; margin: 0 auto; border: 6px solid #fff; border-radius: 12px; }
     @media (max-width: 380px) {
       .page { width: min(100% - 24px, 620px); padding-top: 18px; }
       header { padding: 25px 19px 23px; border-radius: 20px; }
@@ -142,7 +143,12 @@
         <article class="stop"><div class="time">天氣</div><div><p class="desc">示意：出發前查看台南天氣，晴天記得做好防曬。</p></div></article>
         <article class="stop"><div class="time">攜帶</div><div><p class="desc">示意：帶水、雨傘、防曬用品與行動電源。</p></div></article>
         <article class="stop"><div class="time">集合</div><div><p class="desc">示意：第一天上午 10:00 在台南車站前集合。</p></div></article>
+        <article class="stop"><div class="time">集合地點</div><div><p class="desc">集合地點：甲通</p></div></article>
       </div>
+    </section>
+    <section class="day" aria-labelledby="qr-heading">
+      <div class="day-heading"><h2 id="qr-heading">分享這趟小旅行</h2></div>
+      <img class="site-qr" src="tainan-trip-qr.png" alt="掃描 QR 碼開啟台南小旅行網站">
     </section>
     <footer>府城兩日小旅行・行程時間可依實際交通與店家營業狀況調整</footer>
   </main>
